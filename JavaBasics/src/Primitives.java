@@ -12,6 +12,12 @@ public class Primitives{
         boolean check =false;
 
 
+        //Primitive data classes
+        Integer roll1=23;
+        roll1.toString();
+        System.out.println(roll1);
+
+
 
 
 
