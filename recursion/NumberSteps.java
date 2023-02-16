@@ -16,6 +16,7 @@ public class NumberSteps {
         if(n%2==0){
             return helper(n/2,c+1);
         }
+
         return helper(n-1,c+1);
     }
 
