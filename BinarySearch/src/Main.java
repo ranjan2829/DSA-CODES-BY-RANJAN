@@ -1,5 +1,31 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+public class Main{
+    public static void main(String[] args){
+        int[] arr ={1,2,3,4,5,6,7,8,9,10};
+        int key=6;
+        System.out.println(BinarySearch(arr,key));
+
+
+    }
+    static int BinarySearch(int[] arr,int key){
+        int low=arr[0];
+        int index=0;
+        int high =arr.length-1;
+        //int mid=(low+high)/2;
+        while(low<=high){
+            int mid=(low+(high-low))/2;
+            if (key<arr[mid]){
+                high=mid-1;
+            }
+            else if (key>arr[mid])
+            {
+                low=mid+1;
+
+            }
+            else {
+                return mid;
+            }
+        }
+        return -1;
+
     }
 }
