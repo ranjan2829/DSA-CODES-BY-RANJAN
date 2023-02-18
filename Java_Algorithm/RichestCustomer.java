@@ -1,40 +1,26 @@
 package Java_Algorithm;
-
-
-public class RichestCustomer{
-    public static void main (String[] args){
-        int[][] arr ={
-                {1,2,3},
-                {4,5,6},
-                {7,8,9},
-                {9,10,11}
-        };
-        System.out.println(richest(arr));
-
+public class RichestCustomer {
+    public static void main(String[] args){
 
     }
-    static int richest(int[][] arr){
-        int count =0;
-        int[] grp={};
-        for(int i=0;i<arr.length;i++){
-            for(int x=0;x<arr[i].length;x++){
-                count=count+arr[i][x];
+    public int maximumWealth(int[][] accounts) {
+        int ans =Integer.MIN_VALUE;
+        for(int person=0;person< accounts.length;person++){
+            int sum=0;
+            for(int account=0;account<accounts[person].length;account++){
+                sum+=accounts[person][account];
 
             }
-
-            grp[i]=count;
-            count=0;
-
-
-        }
-        int max =grp[0];
-        for(int i=0;i< grp.length;i++){
-            if(grp[i]>max){
-                max=grp[i];
+            if (sum > ans) {
+                ans=sum;
             }
-
-
         }
-        return max ;
+        return ans;
+
+
+
     }
 }
+
+
+
