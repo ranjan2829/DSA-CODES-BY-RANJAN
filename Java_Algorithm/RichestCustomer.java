@@ -1,5 +1,6 @@
 package Java_Algorithm;
 
+
 public class RichestCustomer{
     public static void main (String[] args){
         int[][] arr ={
@@ -14,12 +15,26 @@ public class RichestCustomer{
     }
     static int richest(int[][] arr){
         int count =0;
+        int[] grp={};
         for(int i=0;i<arr.length;i++){
             for(int x=0;x<arr[i].length;x++){
                 count=count+arr[i][x];
+
             }
 
+            grp[i]=count;
+            count=0;
+
+
         }
-        return count;
+        int max =grp[0];
+        for(int i=0;i< grp.length;i++){
+            if(grp[i]>max){
+                max=grp[i];
+            }
+
+
+        }
+        return max ;
     }
 }
