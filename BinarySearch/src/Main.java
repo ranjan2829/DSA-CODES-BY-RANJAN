@@ -10,7 +10,7 @@ public class Main{
         int low=arr[0];
 
         int high =arr.length-1;
-        //int mid=(low+high)/2;
+
         while(low<=high){
             int mid=(low+high)/2;
             if (key<arr[mid]){
