@@ -16,7 +16,7 @@ public class CeilingNumber {
             int mid=start + (end - start) / 2;
             if(target<arr[mid]){
                 end=mid-1;
-//end = mid - 1;
+
             }
             else if (target>arr[mid]){
                 start=mid+1;
