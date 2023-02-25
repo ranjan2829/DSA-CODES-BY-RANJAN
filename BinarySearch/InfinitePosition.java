@@ -1,6 +1,7 @@
 public class InfinitePosition {
     public static void main(String[] args){
-        int[] arr={1,2,3,4,5,6,7,8,9,10};
+        int[] arr = {3, 5, 7, 9, 10, 90,
+                100, 130, 140, 160, 170};
         int key=7;
         System.out.println(ans(arr,key));
 
