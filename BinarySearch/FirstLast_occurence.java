@@ -12,10 +12,6 @@ public class FirstLast_occurence {
 
         return ans;
 
-
-
-
-
     }
     int search(int[] nums,int target,boolean firstStartIndex){
         int ans=-1;
