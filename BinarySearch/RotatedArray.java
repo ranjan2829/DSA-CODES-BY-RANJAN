@@ -1,10 +1,10 @@
 public class RotatedArray{
     public static void main(String[] args){
         int[] arr={4,5,6,7,0,1,2};
-        System.out.println(SearchRotatedArray(arr));
+        System.out.println(findPivot(arr));
 
     }
-    static int SearchRotatedArray(int[] arr){
+    static int findPivot(int[] arr){
         int start=0;
         int end=arr.length-1;
         while(start<=end){
