@@ -4,6 +4,20 @@ public class RotatedArray{
         System.out.println(findPivot(arr));
 
     }
+    static int search(int[] arr,int target){
+        int num=findPivot(arr);
+        if(num==-1) {
+            return binarySearch(arr, target, 0, arr.length - 1)
+        }
+
+
+        if(target==arr[num]){
+            return pivot;
+        }
+        if(target>=arr[pivot])
+
+
+    }
     static int findPivot(int[] arr){
         int start=0;
         int end=arr.length-1;
