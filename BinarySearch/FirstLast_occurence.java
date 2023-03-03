@@ -26,13 +26,13 @@ public class FirstLast_occurence {
                 end=mid-1;
 
             }
-            else {
+            else{
                 ans=mid;
-                if (firstStartIndex){
+                if(firstStartIndex){
                     end=mid-1;
 
                 }
-                else {
+                else{
                     start=mid+1;
 
                 }
