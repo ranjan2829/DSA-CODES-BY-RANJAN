@@ -9,7 +9,7 @@ public class RotatedArray {
         while (start<=end){
             int mid=start+(end-start)/2;
             //4cases to be checked
-            if(mid<end && arr[mid]>arr[mid+1]){
+            if(mid<end && arr[mid]<arr[mid+1]){
                 return mid
             }
             if(mid<start && arr[mid]<arr[mid-1]){
