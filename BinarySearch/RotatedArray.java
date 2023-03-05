@@ -9,17 +9,17 @@ public class RotatedArray {
         int pivot=FindPivot(arr);
         //if you don't have a pivot then
         if(pivot==-1){
-            return BinarySearch(arr,target);
+            return BinarySearch(arr,target,0,arr.length-1);
         }
         if(arr[pivot]==target){
             return pivot;
         }
-        if (arr[pivot]<target){
-            return BinarySearch(arr,target,start=pivot+1,end=arr.length-1);
+        if (target>=arr[0]){
+            return BinarySearch(arr,target,0,pivot-1);
         }
-        else {
-            return BinarySearch(arr,target,start=0,end=pivot-1);
-        }
+
+        return BinarySearch(arr,target,pivot+1,arr.length-1);
+
 
 
 
