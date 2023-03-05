@@ -8,6 +8,19 @@ public class RotatedArray {
     public int Search(int[] arr,int target){
         int pivot=FindPivot(arr);
         //if you don't have a pivot then
+        if(pivot==-1){
+            return BinarySearch(arr,target);
+        }
+        if(arr[pivot]==target){
+            return pivot;
+        }
+        if (arr[pivot]<target){
+            return BinarySearch(arr,target,start=pivot+1,end=arr.length-1);
+        }
+        else {
+            return BinarySearch(arr,target,start=0,end=pivot-1);
+        }
+
 
 
 
@@ -35,9 +48,8 @@ public class RotatedArray {
         return -1;
 
     }
-    static int BinarySearch(int[] arr,int target){
-        int start=0;
-        int end= arr.length-1;
+    static int BinarySearch(int[] arr,int target,int start,int end){
+
         while(start<=end){
             int mid=start+(end-start)/2;
             if(target>arr[mid]){
