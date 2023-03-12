@@ -4,10 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BinarySearch/AgnosticBinarySearch/AgnosticBinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/AgnosticBinarySearch/AgnosticBinarySearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/BinarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bubblesort/Bubble sort.iml" filepath="$PROJECT_DIR$/Bubblesort/Bubble sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-CODES-BY-RANJAN-CPP.iml" filepath="$PROJECT_DIR$/.idea/DSA-CODES-BY-RANJAN-CPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java Algorithm/Java Algorithm.iml" filepath="$PROJECT_DIR$/Java Algorithm/Java Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java Basics/Java Basics.iml" filepath="$PROJECT_DIR$/Java Basics/Java Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasics/JavaBasics.iml" filepath="$PROJECT_DIR$/JavaBasics/JavaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectionsort/selectionsort.iml" filepath="$PROJECT_DIR$/selectionsort/selectionsort.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasics/statements/statements.iml" filepath="$PROJECT_DIR$/JavaBasics/statements/statements.iml" />
     </modules>
   </component>
