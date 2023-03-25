@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +22,10 @@ public class Main {
             else{
                 i++;
             }
+
         }
+
+
 
     }
     static void swap(int[] arr,int num1,int num2){

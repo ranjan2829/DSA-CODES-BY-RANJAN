@@ -3,18 +3,19 @@ class Solution {
 
 
 
-        int i=0;
-        while(i<arr.length){
-            int correct=arr[i]-1;
-            if(arr[correct]!=arr[i]){
-                swap(arr,i,correct);
+
+            int i=0;
+            while(i<arr.length){
+                int correct=arr[i]-1;
+                if(arr[correct]!=arr[i]){
+                    swap(arr,i,correct);
 
 
 
-            }
-            else{
-                i++;
-            }
+                }
+                else{
+                    i++;
+                }
         }
         List<Integer> ans =new ArrayList<>();
         for(int index=0;index<arr.length;index++){
