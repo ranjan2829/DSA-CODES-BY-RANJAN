@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int[] arr ={2,3,5,4,19};
+        int a =10;
+        String name ="ranjan shitole";
+        System.out.println(name);
     }
 }
