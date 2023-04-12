@@ -9,5 +9,11 @@ public class Main {
         System.out.println(name1==name2);
         //only value
         System.out.println(name1.equals(name2));
+        StringBuilder builder = new StringBuilder();
+        for(int i=0;i<26;i++){
+            char ch = (char)('a'+i);
+            builder.append(ch);
+        }
+        System.out.println(builder.toString());
     }
 }
