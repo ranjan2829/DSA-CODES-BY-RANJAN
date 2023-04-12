@@ -7,5 +7,7 @@ public class Main {
         String name1=new String("ranjan");
         String name2= new String("ranjan");
         System.out.println(name1==name2);
+        //only value
+        System.out.println(name1.equals(name2));
     }
 }
