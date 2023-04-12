@@ -4,5 +4,8 @@ public class Main {
         int a =10;
         String name ="ranjan shitole";
         System.out.println(name);
+        String name1=new String("ranjan");
+        String name2= new String("ranjan");
+        System.out.println(name1==name2);
     }
 }
