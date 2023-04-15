@@ -10,12 +10,7 @@ public class product {
         if(n==1){
             return 1;
         }
-        //int ans = 1;
-        //ans=ans*(n*(n-1));
 
-
-        //System.out.println(ans);
-        //product(n-1);
         return n*product(n-1);
 
 
