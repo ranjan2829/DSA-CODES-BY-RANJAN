@@ -6,7 +6,7 @@ public class product {
 
 
     }
-    static void product(int n){
+    static int product(int n){
         if(n==1){
             return;
         }
@@ -14,8 +14,9 @@ public class product {
         ans=ans*(n*(n-1));
 
 
-        System.out.println(ans);
-        product(n-1);
+        //System.out.println(ans);
+        //product(n-1);
+        return n*product(n-1);
 
 
 
