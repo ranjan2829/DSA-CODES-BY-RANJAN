@@ -10,8 +10,13 @@ public class product {
         if(n==1){
             return;
         }
-        System.out.println(n*n-1);
+        int ans =n*(n-1);
+
+
+        System.out.println(ans);
         product(n-1);
+
+
 
     }
 
