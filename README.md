@@ -8,7 +8,7 @@ Data structures and algorithm journey !
 
 
 ## 🛠 Skills
-c++
+## java
 
 
 ## 🔗 Links
