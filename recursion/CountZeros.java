@@ -2,7 +2,7 @@ package recursion;
 
 public class CountZeros {
     public static void main(String[] args){
-        int num=01110030;
+        int num=1110030;
         count(num);
         System.out.println(count(num));
 
