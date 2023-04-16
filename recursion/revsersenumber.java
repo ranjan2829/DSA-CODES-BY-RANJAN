@@ -6,18 +6,5 @@ public class revsersenumber{
     }
     static int reverse(int n){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
