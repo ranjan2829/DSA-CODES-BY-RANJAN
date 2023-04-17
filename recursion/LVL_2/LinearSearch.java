@@ -7,12 +7,12 @@ public class LinearSearch {
         System.out.println(search(arr,0,target));
 
     }
-    static int search(int[] arr,int c,int target){
+    static boolean search(int[] arr,int c,int target){
         if(arr[c]==target){
-            return c;
+            return true;
         }
 
-        return search(arr,c+1,target);
+        return arr[c]!=target || search(arr,c+1,target);
 
 
     }
