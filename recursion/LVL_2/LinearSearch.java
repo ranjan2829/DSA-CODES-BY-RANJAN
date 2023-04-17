@@ -12,6 +12,8 @@ public class LinearSearch {
             return true;
         }
 
+
+
         return arr[c]!=target || search(arr,c+1,target);
 
 
