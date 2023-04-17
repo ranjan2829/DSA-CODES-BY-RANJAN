@@ -8,13 +8,13 @@ public class LinearSearch {
 
     }
     static boolean search(int[] arr,int c,int target){
-        if(arr[c]==target){
-            return true;
+        if(c==arr.length){
+            return false;
         }
 
 
 
-        return arr[c]!=target || search(arr,c+1,target);
+        return arr[c]==target || search(arr,c+1,target);
 
 
     }
