@@ -2,19 +2,17 @@ package recursion.LVL_2;
 
 public class SortedArray {
     public static void main(String[] args){
+        int[] arr={1,2,3,4,5,6,7,8,9,10};
+        System.out.println(sorted(arr,0));
 
     }
-    static void SortArray(int[] arr){
-        return helper(arr,0);
-    }
-    private int helper(int[] arr, int c){
-        if(arr.length==0){
-            return -1;
+    static boolean sorted(int[] arr,int index){
+        if(index==arr.length-1){
+            return true;
         }
-        if(arr[c]>arr[c+1]){
-
-
-        }
-
+        return arr[index]<arr[index+1] && sorted(arr,index+1);
     }
+
+
+
 }
