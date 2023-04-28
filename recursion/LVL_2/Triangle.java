@@ -11,7 +11,7 @@ public class Triangle {
             return 1;
         }
         char c= '*';
-        System.out.println(c*i);
+        System.out.println("*".repeat(i));
         Pattern(i-1);
         return 0;
 
