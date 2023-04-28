@@ -21,5 +21,9 @@ public class RotatedBinarySearch_recursion {
                 return search(arr,target,m+1,e);
             }
         }
+        if(target>=arr[m] && target <= arr[e]){
+            return search(arr,target,m+1,e);
+        }
+        return search(arr,target,s,m-1);
     }
 }
