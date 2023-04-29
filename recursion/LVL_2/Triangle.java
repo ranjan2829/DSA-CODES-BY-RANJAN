@@ -8,12 +8,13 @@ public class Triangle {
     }
     static int Pattern(int i){
         if(i==0){
-            return 1;
+            return 1 ;
         }
 
         System.out.println("*".repeat(i));
         Pattern(i-1);
         return 0;
+
 
     }
 }
