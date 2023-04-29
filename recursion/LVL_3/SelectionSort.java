@@ -18,6 +18,7 @@ public class SelectionSort {
                 SelectionSort(arr,r,c+1,max);
             }
         }
+        //tricky Question
         else{
             int temp =arr[max];
             arr[max]=arr[r-1];
