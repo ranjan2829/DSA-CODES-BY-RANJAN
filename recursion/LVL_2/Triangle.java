@@ -10,7 +10,7 @@ public class Triangle {
         if(i==0){
             return 1;
         }
-        char c= '*';
+
         System.out.println("*".repeat(i));
         Pattern(i-1);
         return 0;
