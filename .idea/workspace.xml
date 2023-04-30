@@ -98,6 +98,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682794294193</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="done">
       <created>1682845045445</created>
       <option name="number" value="00004" />
@@ -106,6 +107,9 @@
       <updated>1682845045446</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <option name="localTasksCounter" value="4" />
+>>>>>>> bf9a3633451f15616c055475cfc122a2ff636205
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
