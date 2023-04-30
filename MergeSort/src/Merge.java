@@ -19,6 +19,21 @@ public class Merge {
 
     }
     private static int[] merge(int[] first,int[] second){
+        int[] mix=new int[first.length+ second.length];
+        int i=0;
+        int j=0;
+        int k=0;
+        while(i< first.length && second.length){
+            if(first[i]<second[j]){
+                mix[k]=first[i];
+                i++;
+            }
+            else{
+                mix[k]=second[j];
+                j++;
+            }
+            k++;
+        }
 
     }
 
