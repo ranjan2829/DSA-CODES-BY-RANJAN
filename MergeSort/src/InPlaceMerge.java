@@ -1,5 +1,12 @@
+import java.util.Arrays;
+
 public class InPlaceMerge {
     public static void main(String[] args){
+        int[] arr ={8,7,6,5,4,3,2,1};
+        merge(arr,0, arr.length);
+        System.out.println(Arrays.toString(arr));
+
+
 
     }
     static void merge(int[] arr,int start,int end){
@@ -27,7 +34,9 @@ public class InPlaceMerge {
                 mix[k]=arr[j];
                 j++;
             }
-        }k++;
+            k++;
+        }
+
         while(i<mid){
             mix[k]=arr[i];
             i++;
