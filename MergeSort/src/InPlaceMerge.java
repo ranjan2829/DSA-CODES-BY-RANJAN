@@ -14,6 +14,10 @@ public class InPlaceMerge {
 
     }
     private static void mergeSort(int[] arr,int start,int mid,int end){
+        int[] mix =new int[end-start];
+        int i=start;
+        int j= mid;
+        int k=0;
 
     }
 }
