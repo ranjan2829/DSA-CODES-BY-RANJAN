@@ -3,6 +3,10 @@ import java.util.Arrays;
 public class Merge {
 
     public static void main(String[] args){
+        int[] arr={8,7,6,5,4,3,2,1};
+        MergeSort(arr);
+        System.out.println(Arrays.toString(MergeSort(arr)));
+        System.out.println(Arrays.toString(arr));
 
     }
     static int[] MergeSort(int[] arr) {
@@ -23,7 +27,7 @@ public class Merge {
         int i=0;
         int j=0;
         int k=0;
-        while(i< first.length && second.length){
+        while(i< first.length && j<second.length){
             if(first[i]<second[j]){
                 mix[k]=first[i];
                 i++;
@@ -35,6 +39,19 @@ public class Merge {
             k++;
 
         }
+        while(i< first.length){
+            mix[k]=first[i];
+            i++;
+            k++;
+        }
+        while(j< second.length){
+            mix[k]=second[j];
+            j++;
+            k++;
+        }
+
+
+        return mix;
 
     }
 
