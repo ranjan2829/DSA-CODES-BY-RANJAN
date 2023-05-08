@@ -40,8 +40,7 @@ public class Main {
                 e--;
             }
         }
-        //quicksort(arr,low,e);
-       // quicksort(arr,s,high);
+
     }
 
 
