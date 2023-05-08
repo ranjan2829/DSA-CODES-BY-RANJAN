@@ -15,6 +15,19 @@ public class Main {
             return;
 
         }
+        int s =low;
+        int e=high;
+        int mid =s+(e-s)/2;
+        int pivot=arr[mid];
+        while(s<=e){
+            while(arr[s]<pivot){
+                s++;
+
+            }
+            while(arr[e]>pivot){
+                e--;
+            }
+        }
     }
 
 
