@@ -20,17 +20,17 @@ public class Main {
         Subsequence(p,up.substring(1));
 
     }
-    static ArrayList<String> Sub(String p, String up){
-        if(up.isEmpty()){
+    static ArrayList<String> Sub(String p, String up) {
+        if (up.isEmpty()) {
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
             return list;
         }
-        char ch=up.charAt(0);
-        ArrayList<String> left= Sub(p+ch,up.substring(1));
-        ArrayList<String> right =Sub(p,up.substring(1));
+        char ch = up.charAt(0);
+        ArrayList<String> left = Sub(p + ch, up.substring(1));
+        ArrayList<String> right = Sub(p, up.substring(1));
         left.addAll(right);
-        return left;
+          return left;
 
     }
 }
