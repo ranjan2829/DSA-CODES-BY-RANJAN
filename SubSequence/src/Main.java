@@ -30,7 +30,8 @@ public class Main {
         ArrayList<String> left = Sub(p + ch, up.substring(1));
         ArrayList<String> right = Sub(p, up.substring(1));
         left.addAll(right);
-          return left;
+        ArrayList<String> lol = new ArrayList<>();
+        return left;
 
     }
 }
