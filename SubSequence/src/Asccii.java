@@ -1,5 +1,5 @@
 public class Asccii {
-    public static viod main(String[] args){
+    public static void main(String[] args){
 
 
     }
