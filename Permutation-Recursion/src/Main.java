@@ -12,7 +12,7 @@ public class Main {
         for (int i=0;i<=p.length();i++){
             String f=p.substring(0,i);
             String s=p.substring(i,p.length());
-            permutation(f+s+ch,up.substring(1));
+            permutation(f+ch+s,up.substring(1));
 
         }
     }
