@@ -3,7 +3,8 @@ import java.util.List;
 
 public class LetterCombinationsPhoneNumber {
     public static void main(String[] args){
-        combo("","abc");
+        //System.out.println(letter("","23"));
+        combo("","23");
 
 
     }
@@ -12,9 +13,11 @@ public class LetterCombinationsPhoneNumber {
             System.out.println(p);
             return;
         }
-        char ch = up.charAt(0);
-        combo(p + ch, up.substring(1));
-        combo(p, up.substring(1));
+        int digit=up.charAt(0)-'0';
+        for(int i=(digit-1)*3;i<digit*3;i++){
+            char ch=(char)('a'+i);
+            combo(p+ch,up.substring(1));
+        }
     }
     static List<String> letter(String p,String up){
         if(up.isEmpty()){
@@ -23,8 +26,9 @@ public class LetterCombinationsPhoneNumber {
             return list;
         }
         char ch=up.charAt(0);
-        ArrayList<String> left = letter(p+ch,up.substring(1));
-        ArrayList<String> right = letter(p,up.substring(1));
+
+        ArrayList<String> left = (ArrayList<String>) letter(p + ch, up.substring(1));
+        ArrayList<String> right = (ArrayList<String>) letter(p, up.substring(1));
         left.addAll(right);
         return left;
 
