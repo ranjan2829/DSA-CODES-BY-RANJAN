@@ -4,7 +4,7 @@ import java.util.List;
 public class LetterCombinationsPhoneNumber {
     public static void main(String[] args){
         //System.out.println(letter("","23"));
-        combo("","23");
+        combo("","12");
 
 
     }
