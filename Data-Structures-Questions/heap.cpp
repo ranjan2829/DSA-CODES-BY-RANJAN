@@ -6,7 +6,7 @@ class heap{
     int* Hp;
     int size;
 public:
-    heap(n){
+    heap(int n){
         size=n;
         Hp = new int[size];
     }
@@ -18,15 +18,29 @@ public:
         }
     }
     int minmark(){
-        make_heap(Hp,size);
-        return heap[0];
+        make_heap(Hp,Hp+size);
+        return Hp[0];
     }
     int maxmarks(){
-        make_heap(Hp,size,greater <int>())
-        return heap[0];
+        make_heap(Hp,Hp+size,greater<int>());
+        return Hp[0];
     }
-    ~heap{
+    ~heap(){
         delete[] Hp;
     }
     
 };
+int main(){
+    int n;
+    cout<<"enter the n"<<endl;
+    cin>>n;
+    heap h(n);
+    h.get_marks();
+
+    cout<<"max"<<h.maxmarks();
+    cout<<"min"<<h.minmark();
+    h.~heap();
+    return 0;
+
+
+}
