@@ -45,9 +45,19 @@ int main(){
         cin>>root->children[i]->label;
         cout<<"enter sections"<<endl;
         cin>>root->children[i]->count;
-        for(int i=0;i<root->children[i]->count;i++){
-            
+        for(int j=0;j<root->children[i]->count;j++){
+            root->children[i]->children[j]=new Node;
+            cout<<"enter sec name"<<endl;
+            cin>>root->children[i]->children[j]->label;
+            cout<<"enter number of sub sections"<<endl;
+            cin>>root->children[i]->children[j]->count;
+
+
         }
+        cout<<"**********book*********"<<endl;
+        display(root);
+        return 0;
+        
 
     }
 }
