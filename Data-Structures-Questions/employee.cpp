@@ -35,3 +35,13 @@ class File{
     void display();
 
 };
+void File::insert(){
+    record r;
+    fs.open("employeeDB");
+    while(fs.read((char*)&r,sizeof(r))){
+        r.put();
+    }
+    fs.close();
+
+
+}
