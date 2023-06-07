@@ -10,6 +10,25 @@ struct Node{
 };
 void insert(Node* node){
     int n;
+    cout<<"enter name"<<endl;
+    getline(cin>>ws,node->label);
     cout<<"enter the number of nodes "<<endl;
-    cin>>n;
+    cin>>node->count;
+    for(int i=0;i<node->count;i++){
+        node->children[i]=new Node;
+        insert(node->children[i]);
+
+
+    }
+}
+void display(Node* node,string indent =" "){
+    if(node!=nullptr){
+        cout<<indent<<node->label<<endl;
+        indent+="  ";
+
+    }
+    for(int i=0;i<node->count;i++){
+        
+    }
+
 }
