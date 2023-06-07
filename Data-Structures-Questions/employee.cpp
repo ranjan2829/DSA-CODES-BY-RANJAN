@@ -45,3 +45,26 @@ void File::insert(){
 
 
 }
+int main(){
+    File f;
+    int ch;
+    do{
+        cout << "\n\n\t-----M E N U-----";
+        cout << "\n1. Build A Master Table";
+        cout << "\n2. List A Table";
+        cout << "\n3. Insert a New Entry";
+        cout << "\n4. Quit";
+        cout << "\nEnter your Choice: ";
+        cin>>ch;
+        switch (ch)
+        {
+        case /* constant-expression */:
+            /* code */
+            break;
+        
+        default:
+            break;
+        }
+
+    }
+}
