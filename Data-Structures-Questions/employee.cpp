@@ -58,13 +58,33 @@ int main(){
         cin>>ch;
         switch (ch)
         {
-        case /* constant-expression */:
+        case 1:
             /* code */
+            int n;
+            cout<<"enter number of records"<<endl;
+            cin>>n;
+            for(int i=0;i<n;i++){
+                f.insert();
+            }
             break;
+
+        case 2:
+             f.display();
+             break;
+        case 3: 
+            f.insert();
+        case 4: 
+            break;
+
+
+
         
         default:
-            break;
+            cout<<"enter choice"<<endl;
+
         }
 
-    }
+    }while(ch!=4);
+    return 0;
+    
 }
