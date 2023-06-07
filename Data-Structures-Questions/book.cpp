@@ -28,7 +28,26 @@ void display(Node* node,string indent =" "){
 
     }
     for(int i=0;i<node->count;i++){
-        
+        display(node->children[i],indent);
+
     }
 
+}
+int main(){
+    Node* root=new Node;
+    cout<<"enter book name";
+    cin>>root->label;
+    cout<<"enter count"<<endl;
+    cin>>root->count;
+    for(int i=0;i<root->count;i++){
+        root->children[i]=new Node;
+        cout<<"enter name of chapter"<<endl;
+        cin>>root->children[i]->label;
+        cout<<"enter sections"<<endl;
+        cin>>root->children[i]->count;
+        for(int i=0;i<root->children[i]->count;i++){
+            
+        }
+
+    }
 }
