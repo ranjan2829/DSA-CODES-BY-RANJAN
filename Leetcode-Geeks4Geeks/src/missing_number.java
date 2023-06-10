@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class missing_number {
     public static void main(String[] args){
-        int[] array={9,8,7,6,4,3,2,1,0};
+        int[] array={9,7,6,4,3,2,1,0};
         int n= array.length;
         System.out.println(missing(array,n));
 
@@ -11,16 +11,17 @@ public class missing_number {
 
 
     public static int missing(int[] arr,int n){
-        int i=0;
+        Arrays.sort(arr);
+
         int x=0;
 
 
-        while(i<arr.length);
-            if(arr[i]==i){
-                i++;
+        for(int i=0;i<n;i++){
+            if(arr[i]!=i+1){
+                x=i+1;
             }
             else {
-                x=i;
+                continue;
             }
         }
         return x;
@@ -30,4 +31,4 @@ public class missing_number {
 
 }
 
-        // Your Code Here
+// Your Code Here
