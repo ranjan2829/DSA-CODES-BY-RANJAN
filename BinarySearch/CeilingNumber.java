@@ -1,10 +1,13 @@
+import java.util.ArrayList;
+
 public class CeilingNumber {
     public static void main(String[] args){
         int[] arr ={1,2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19};
         int target=15;
         int ans=Ceiling(arr,target);
         System.out.println(ans);
-
+        ArrayList<Integer> list = new ArrayList<>();
+        System.out.println();
     }
     static int Ceiling(int[] arr,int target){
         if(target>arr[arr.length-1]){

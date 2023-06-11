@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RotatedArray {
     public static void main(String[] args){
         int[] arr={4,5,6,7,0,1,2};
@@ -5,6 +7,7 @@ public class RotatedArray {
 
 
     }
+
     public int Search(int[] arr,int target){
         int pivot=FindPivot(arr);
         //if you don't have a pivot then
