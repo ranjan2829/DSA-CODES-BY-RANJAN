@@ -6,6 +6,7 @@ public class RotatedArray {
         System.out.println(FindPivot(arr));
 
 
+
     }
 
     public int Search(int[] arr,int target){
