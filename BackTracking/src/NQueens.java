@@ -17,6 +17,21 @@ public class NQueens {
             }
         }
     }
+    private static boolean isSafe(boolean[][] board,int row,int col){
+        for(int i=0;i<row;i++){
+            if(board[i][col]){
+                return false;
+            }
+        }
+        int maxleft=Math.min(row,col);
+        for(int i=1;i<maxleft;i++){
+            if(board[row-1][col-1]){
+                return false;
+            }
+
+        }
+
+    }
     private static void display(boolean[][] board){
         for(boolean[] row:board){
             for(boolean element : row){
