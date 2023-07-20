@@ -34,6 +34,34 @@ public class Nknights {
         }
     }
     private static boolean isSafe(boolean[][] board,int row,int col){
+        if(valid(board,row-2,col-2)){
+            if(board[row-2][col-1]){
+                return false;
+            }
+        }
+        if(valid(board,row-1,col-2)){
+            if(board[row-1][col-2]){
+                return false;
+            }
+        }
+        if(valid(board,row-2,col+1)){
+            if(board[row-2][col-1]){
+                return false;
+            }
+        }
+        if(valid(board,row-1,col+2)){
+            if(board[row-1][col+2]){
+                return false;
+            }
+        }
+        return true;
 
     }
+    static boolean valid(boolean[][] board,int row, int col){
+        if(row>=0&&row< board.length&&col>=0&& col< board.length){
+            return true;
+        }
+        return false;
+    }
+
 }
