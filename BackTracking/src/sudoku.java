@@ -26,6 +26,18 @@ public class sudoku {
             return true;
             //solved
         }
+        for(int number=1;number<=9;number++){
+            if(isSafe(board,row,col,number)){
+                board[row][col]=number;
+            }
+            if(solve(board)){
+                return true;
+            }
+            else{
+                board[row][col]=0;
+            }
+        }
+        return false;
     }
     static boolean isSafe(int[][] board ,int row,int col, int  num){
         for(int i=0;i< board.length;i++){
