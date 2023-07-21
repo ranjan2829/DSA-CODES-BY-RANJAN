@@ -2,6 +2,31 @@ public class sudoku {
     public static void main(String[] args) {
 
     }
+    static boolean solve(int[][] board){
+        int n=board.length;
+        int row=-1;
+        int col=-1;
+        boolean emptyleft=true;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(board[i][j]==0){
+                    row=i;
+                    col=j;
+                    emptyleft=false;
+                    break;
+                }
+
+            }
+            if(emptyleft==false){
+                break;
+
+            }
+        }
+        if(emptyleft==true){
+            return true;
+            //solved
+        }
+    }
     static boolean isSafe(int[][] board ,int row,int col, int  num){
         for(int i=0;i< board.length;i++){
             if(board[row][col]==num){
