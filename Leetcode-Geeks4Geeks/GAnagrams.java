@@ -1,25 +1,23 @@
-
+import java.util.*;
 
 public class GAnagrams {
     public static void main(String[] args) {
 
     }
     public List<List<String>> groupAnagrams(String[] strs) {
-        ArrayList<String> list=new ArrayList<>();
-        List<<List<String>> ans = new ArrayList<>();
+        Map<String,List<String>> map=new HashMap<>();
+        for(String words:strs){
+            char[] chars=words.toCharArray();
+            Arrays.sort(chars);
 
-        if(strs.length==0){
-            list.add("");
-            ans.add(list);
-            return ans;
+            String sorted=new String(chars);
+            if(!map.containsKey(sorted)){
+                map.put(sorted,new ArrayList<>());
+            }
+            map.get(sorted).add(words);
+
         }
-        for(int i=0;i<strs.length;i++){
-
-        }
-
-
-
-
-
+        return new ArrayList<>(map.values());
     }
+
 }
