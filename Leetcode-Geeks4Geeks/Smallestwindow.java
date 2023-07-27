@@ -34,6 +34,17 @@ public class Smallestwindow {
         }
         return str.toString();
     }
+    private static int isValid(int[] s, int[] p) {
+        for (int i = 0 ; i < 26 ; i++) {
+            if (p[i] != 0) {
+                if (p[i] > s[i]) {
+                    return -1;
+                }
+            }
+        }
+
+        return 0;
+    }
 
 }
 
