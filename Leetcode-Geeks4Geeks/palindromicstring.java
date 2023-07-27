@@ -20,6 +20,17 @@ public class palindromicstring {
     }
     static boolean isPlain(String str){
         int i=0;
+        int j=str.length()-1;
+        while(i<=j){
+            char a=str.charAt(i);
+            char b=str.charAt(j);
+            if(a!=b){
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
 
     }
 }
