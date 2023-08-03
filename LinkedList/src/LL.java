@@ -16,6 +16,14 @@ public class LL {
 
 
     }
+    public void display(){
+        Node temp= head;
+        while(temp!=null){
+            System.out.println(temp.value + "-> ");
+
+            temp=temp.next;
+        }
+    }
     private class Node{
         private int value;
         private Node next;
