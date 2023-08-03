@@ -2,6 +2,20 @@ public class LL {
     private Node head;
     private Node tail;
     private int size;
+    public LL(){
+        this.size=size;
+    }
+    public void insertfirst(int val){
+        Node node= new Node(val);
+        node.next=head;
+        head= node;
+        if(tail==null){
+            tail=head;
+        }
+        size+=1;
+
+
+    }
     private class Node{
         private int value;
         private Node next;
