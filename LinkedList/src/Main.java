@@ -8,6 +8,7 @@ public class Main {
         list.insertfirst(78);
         list.insertfirst(56);
         list.insertfirst(66);
+        list.insertlast(69);
         list.display();
 
 
