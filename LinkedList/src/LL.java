@@ -55,6 +55,18 @@ public class LL {
         return val;
 
     }
+    public int deleteLast(){
+        if(size<=1){
+            return deletefirst();
+        }
+        Node second=get(size-2);
+        int val=second.value;
+        tail=second;
+        tail.next=null;
+        return val;
+
+
+    }
     public Node get(int index){
         Node node=head;
         for(int i=0;i<index;i++){
