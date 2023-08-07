@@ -55,6 +55,13 @@ public class LL {
         return val;
 
     }
+    public Node get(int index){
+        Node node=head;
+        for(int i=0;i<index;i++){
+            node=node.next;
+        }
+        return node;
+    }
     public void display(){
         Node temp= head;
         while(temp!=null){
