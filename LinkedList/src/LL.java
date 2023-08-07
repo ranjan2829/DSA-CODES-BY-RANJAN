@@ -51,7 +51,9 @@ public class LL {
         if(head==null){
             tail=null;
         }
+        size--;
         return val;
+
     }
     public void display(){
         Node temp= head;
