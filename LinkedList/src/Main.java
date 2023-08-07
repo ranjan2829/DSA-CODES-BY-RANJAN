@@ -10,6 +10,7 @@ public class Main {
         list.insertfirst(66);
         list.insertlast(69);
         list.insertmiddle(999,3);
+        System.out.println(list.deletefirst());
         list.display();
 
 
