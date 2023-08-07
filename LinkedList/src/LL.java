@@ -45,6 +45,14 @@ public class LL {
 
 
     }
+    public int deletefirst(){
+        int val=head.value;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        return val;
+    }
     public void display(){
         Node temp= head;
         while(temp!=null){
