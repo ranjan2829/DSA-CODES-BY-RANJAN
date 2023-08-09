@@ -1,22 +1,41 @@
+
+
 public class Main {
     public static void main(String[] args) {
         LL list = new LL();
-        list.insertfirst(14);
-        list.insertfirst(1);
-        list.insertfirst(10);
-        list.insertfirst(19);
-        list.insertfirst(78);
-        list.insertfirst(56);
-        list.insertfirst(66);
-       // list.insertlast(69);
-        //list.insertmiddle(999,3);
-        list.deleteLast();
-
+        list.insertFirst(3);
+        list.insertFirst(2);
+        list.insertFirst(8);
+        list.insertFirst(17);
+        list.insertLast(99);
+        list.insert(100, 3);
+        list.display();
+        System.out.println(list.deleteFirst());
+        list.display();
         System.out.println(list.deleteLast());
-        //System.out.println(list.deletefirst());
+        list.display();
+        System.out.println(list.delete(2));
+        list.display();
+        list.insertRec(88, 2);
         list.display();
 
+//        DLL list = new DLL();
+//        list.insertFirst(3);
+//        list.insertFirst(2);
+//        list.insertFirst(8);
+//        list.insertFirst(17);
+//        list.insertLast(99);
+//        list.insert(8, 65);
+//
+//        list.display();
 
-
+//        CLL list = new CLL();
+//        list.insert(23);
+//        list.insert(3);
+//        list.insert(19);
+//        list.insert(75);
+//        list.display();
+//        list.delete(19);
+//        list.display();
     }
 }
