@@ -17,6 +17,18 @@ public class CLL {
         node.next = head;
         tail = node;
     }
+    public void display() {
+        Node node = head;
+        if (head != null) {
+            do {
+                System.out.print(node.val + " -> ");
+                if (node.next != null) {
+                    node = node.next;
+                }
+            } while (node != head);
+        }
+        System.out.println("HEAD");
+    }
     private class Node {
         int val;
         Node next;
