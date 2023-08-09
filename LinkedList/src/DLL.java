@@ -27,6 +27,16 @@ public class DLL {
         last.next=node;
         node.prev=last;
     }
+    public Node find(int value) {
+        Node node = head;
+        while (node != null) {
+            if (node.val == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
     public void display(){
         Node node=head;
         while(node!=null){
