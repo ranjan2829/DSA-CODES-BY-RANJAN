@@ -11,7 +11,7 @@ public class DLL {
 
 
     }
-    public void inserlast(int val){
+    public void insertlast(int val){
         Node node= new Node(val);
         Node last=head;
         node.next=null;
