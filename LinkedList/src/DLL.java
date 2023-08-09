@@ -1,6 +1,6 @@
 public class DLL {
     Node head;
-    public void insertFirst(int val){
+    public void insertfirst(int val){
         Node node= new Node(val);
         node.next=head;
         node.prev=null;
@@ -14,9 +14,10 @@ public class DLL {
     public void display(){
         Node node=head;
         while(node!=null){
-            System.out.println(node.val+" -> ");
+            System.out.print(node.val+" -> ");
             node=node.next;
         }
+        System.out.println("END");
     }
     private class Node{
         int val;
