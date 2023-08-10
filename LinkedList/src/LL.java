@@ -89,6 +89,16 @@ public class LL {
         }
         return node;
     }
+    private Node inserRec(int val, int index, Node node){
+        if(index==0){
+            Node temp=new Node(val,node);
+            size++;
+            return temp;
+
+        }
+        node.next=inserRec(val,index--,node.next);
+        return node;
+    }
     public void display(){
         Node temp= head;
         while(temp!=null){
