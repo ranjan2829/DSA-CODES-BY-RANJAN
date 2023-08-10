@@ -89,6 +89,9 @@ public class LL {
         }
         return node;
     }
+    public void inserRec(int val, int index){
+        head=inserRec(val,index,head);
+    }
     private Node inserRec(int val, int index, Node node){
         if(index==0){
             Node temp=new Node(val,node);
