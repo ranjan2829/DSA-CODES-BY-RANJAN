@@ -18,7 +18,12 @@ public class custom {
         if(isEmpty()){
             throw new Exception("nope");
         }
+        return data[ptr--];
 
+
+    }
+    public int peek(){
+        return data[ptr];
     }
     private boolean isFull(){
         return ptr== data.length-1;
