@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/recursion/recursion.iml" filepath="$PROJECT_DIR$/recursion/recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/recursion-quest/recursion-quest.iml" filepath="$PROJECT_DIR$/recursion-quest/recursion-quest.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectionsort/selectionsort.iml" filepath="$PROJECT_DIR$/selectionsort/selectionsort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stacks-queues/stacks-queues.iml" filepath="$PROJECT_DIR$/stacks-queues/stacks-queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasics/statements/statements.iml" filepath="$PROJECT_DIR$/JavaBasics/statements/statements.iml" />
     </modules>
   </component>
