@@ -15,6 +15,13 @@ public class CustomQueue {
         return end==-1;
 
     }
+    public boolean insert(int item){
+        if(isFull()){
+            return false;
+        }
+        data[end++]=item;
+        return true;
+    }
 
 
 
