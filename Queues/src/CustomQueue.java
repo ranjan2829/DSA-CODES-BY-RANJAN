@@ -34,6 +34,13 @@ public class CustomQueue {
         return removed;
 
     }
+    public int front() throws Exception{
+        if(isEmpty()){
+            throw new Exception("naah");
+
+        }
+        return data[0];
+    }
 
 
 
