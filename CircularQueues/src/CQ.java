@@ -12,7 +12,7 @@ public class CQ {
         this.data=new int[size];
     }
     public boolean isFull(){
-        return end== data.length-1;
+        return size== data.length-1;
     }
     public boolean isEmpty(){
         return end==-1;
@@ -23,17 +23,17 @@ public class CQ {
             return false;
         }
         data[end++]=item;
+        end=end% data.length;
+        size++;
         return true;
     }
     public int remove() throws Exception{
         if(isEmpty()){
             throw new Exception("Queue is Empty");
         }
-        int removed =data[0];
-        for(int i=1;i<end;i++){
-            data[i-1]=data[i];
-        }
-        end--;
+        int removed =data[front++];
+        front=front% data.length;
+        size--;
         return removed;
 
     }
@@ -42,7 +42,7 @@ public class CQ {
             throw new Exception("naah");
 
         }
-        return data[0];
+        return data[front];
     }
     public void display(){
         for(int i=0 ;i<end;i++){
