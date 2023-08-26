@@ -1,7 +1,10 @@
 public class CQ {
     private int[] data;
     private static final int DEFAULT_SIZE =10;
-    int end=-1;
+    protected int end=0;
+    protected int front=0;
+    private int size=0;
+
     public CustomQueue(){
         this(DEFAULT_SIZE);
     }
