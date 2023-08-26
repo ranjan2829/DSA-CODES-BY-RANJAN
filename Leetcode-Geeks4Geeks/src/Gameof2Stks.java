@@ -24,6 +24,15 @@ public class Gameof2Stks {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         for(int i=0;i<t;i++){
+            int n=sc.nextInt();
+            int m= sc.nextInt();
+            int x =sc.nextInt();
+            int[] a=new int[n];
+            int[] b=new int[m];
+            for(int j=0;j<m;j++){
+                b[i]= sc.nextInt();
+            }
+            System.out.println(TwoStk(x,a,b));
 
         }
     }
