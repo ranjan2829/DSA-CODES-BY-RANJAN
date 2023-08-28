@@ -29,9 +29,12 @@ public class BinaryTrees {
             node.data=val;
             populate(scanner,node.left);
         }
+        System.out.println("do you wanna enter to the right of  "+node.data);
+        boolean right=scanner.nextBoolean();
 
 
-        boolean right= scanner.nextBoolean();
+
+
         if(right){
             System.out.println("enter the val for right of  "+node.data);
             int val=scanner.nextInt();
