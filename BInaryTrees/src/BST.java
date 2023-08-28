@@ -32,6 +32,13 @@ public class BST {
     public boolean isEmpty(){
         return root==null;
     }
+    public void display(Node node , String details){
+        if(node==null){
+            return;
+
+        }
+        System.out.println(details+node.data);
+    }
 
 
 
