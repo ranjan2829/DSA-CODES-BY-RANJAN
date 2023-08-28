@@ -49,10 +49,12 @@ public class BinaryTrees {
     }
 
     private void display(Node node, String indent) {
-        if (node != null) {
-            System.out.println(indent + node.data);
-            display(node.left, indent + "\t");
-            display(node.right, indent + "\t");
+        if (node == null) {
+            return;
+        }
+        System.out.println(indent + node.data);
+        display(node.left, indent + "\t");
+        display(node.right, indent + "\t");
         }
     }
 
