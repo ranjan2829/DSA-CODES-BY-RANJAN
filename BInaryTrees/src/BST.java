@@ -42,6 +42,12 @@ public class BST {
         display(node.left,"Left child of "+node.getValue()+":");
         display(node.right,"right child of "+node.getValue()+":");
     }
+    private Node insert(int val,Node node){
+        if(val< node.data){
+            node.left=insert(val,node.left);
+        }
+
+    }
 
 
 
