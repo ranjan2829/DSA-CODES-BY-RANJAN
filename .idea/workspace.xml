@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3507c770-042d-4e62-bfc3-8df5ea667804" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Leetcode-Geeks4Geeks/src/Gameof2Stks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
