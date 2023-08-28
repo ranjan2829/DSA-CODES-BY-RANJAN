@@ -51,8 +51,8 @@ public class BinaryTrees {
     private void display(Node node, String indent) {
         if (node != null) {
             System.out.println(indent + node.data);
-            display(node.left, indent + "  ");
-            display(node.right, indent + "  ");
+            display(node.left, indent + "\t");
+            display(node.right, indent + "\t");
         }
     }
 
@@ -62,4 +62,6 @@ public class BinaryTrees {
         binaryTree.populate(scanner);
         binaryTree.display();
     }
+
+
 }
