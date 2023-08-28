@@ -54,6 +54,8 @@ public class BST {
             node.right=insert(val,node.right);
         }
 
+        return node;
+
     }
 
 
