@@ -22,6 +22,22 @@ public class BinaryTrees {
     }
     private void populate(Scanner scanner,Node node){
         System.out.println("wanna enter left child of "+node.data);
+        boolean left= scanner.nextBoolean();
+        if(left){
+            System.out.println("enter the val for left of  "+node.data);
+            int val=scanner.nextInt();
+            node.data=val;
+            populate(scanner,node.left);
+        }
+
+
+        boolean right= scanner.nextBoolean();
+        if(right){
+            System.out.println("enter the val for right of  "+node.data);
+            int val=scanner.nextInt();
+            node.data=val;
+            populate(scanner,node.left);
+        }
 
 
     }
