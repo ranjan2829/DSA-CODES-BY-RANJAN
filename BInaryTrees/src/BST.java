@@ -38,6 +38,7 @@ public class BST {
 
         }
         System.out.println(details+node.data);
+        display(node.left,"Left child of "+node.getValue()+":");
     }
 
 
