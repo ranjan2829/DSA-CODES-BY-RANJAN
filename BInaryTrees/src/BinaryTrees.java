@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class BinaryTrees {
     public BinaryTrees(){
 
@@ -9,5 +11,13 @@ public class BinaryTrees {
         public Node(int val){
             this.data=val;
         }
+    }
+    private Node root;
+    //insert
+    public void populate(Scanner scanner){
+        System.out.println("enter root");
+        int value=scanner.nextInt();
+        root=new Node(value);
+        populate(scanner,root);
     }
 }
