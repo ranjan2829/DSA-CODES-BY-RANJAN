@@ -20,4 +20,9 @@ public class BinaryTrees {
         root=new Node(value);
         populate(scanner,root);
     }
+    private void populate(Scanner scanner,Node node){
+        System.out.println("wanna enter left child of "+node.data);
+
+
+    }
 }
