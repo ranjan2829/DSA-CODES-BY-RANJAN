@@ -44,7 +44,7 @@ public class BST {
     }
     private Node insert(int val,Node node){
         if(node==null){
-            node=new node(val);
+            node=new Node(val);
             return node;
         }
         if(val< node.data){
