@@ -57,9 +57,9 @@ public abstract class BST {
         return node;
 
     }
-    public boolean balacned(
+    public boolean balacned(){
             return balanced(root);
-    )
+}
     private boolean balanced(Node node){
         if(node==null){
             return true;
