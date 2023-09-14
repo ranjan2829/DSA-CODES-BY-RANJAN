@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class CeilingNumber {
@@ -8,6 +9,7 @@ public class CeilingNumber {
         System.out.println(ans);
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println();
+        
     }
     static int Ceiling(int[] arr,int target){
         if(target>arr[arr.length-1]){
