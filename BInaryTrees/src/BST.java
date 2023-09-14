@@ -66,6 +66,12 @@ public abstract class BST {
         }
         return Math.abs(height(node.left)-height(node.right))<=1 &&balanced(node.left)&&balanced(node.right);
     }
+    public void preorder(){
+        preorder(root);
+    }
+    private void preorder(Node node){
+
+    }
 
 
 
