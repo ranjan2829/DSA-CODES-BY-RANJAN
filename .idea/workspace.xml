@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3507c770-042d-4e62-bfc3-8df5ea667804" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinarySearch/CeilingNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySearch/CeilingNumber.java" afterDir="false" />
-    </list>
+    <list default="true" id="3507c770-042d-4e62-bfc3-8df5ea667804" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +43,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.sudoku">
+  <component name="RunManager" selected="Application.NQueens">
     <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NQueens" />
       <module name="BackTracking" />
@@ -80,9 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.sudoku" />
         <item itemvalue="Application.Nknights" />
-        <item itemvalue="Application.NQueens" />
       </list>
     </recent_temporary>
   </component>
