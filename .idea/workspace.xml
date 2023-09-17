@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3507c770-042d-4e62-bfc3-8df5ea667804" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AVLTREES/src/AVLTREES.java" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTREES/src/AVLTREES.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Nknights">
+  <component name="RunManager" selected="Application.sudoku">
     <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NQueens" />
       <module name="BackTracking" />
@@ -83,9 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.sudoku" />
         <item itemvalue="Application.Nknights" />
+        <item itemvalue="Application.NQueens" />
       </list>
     </recent_temporary>
   </component>
