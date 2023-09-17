@@ -61,23 +61,37 @@ class AVLTREES {
             if(height(node.left)-height(node.right)>1)
             //left heavy
             {
-                if(height(node.left.left) - height(node.left.right)>0) {
+                if (height(node.left.left) - height(node.left.right) > 0) {
                     //leftleft
                     return rightrotate(node);
                 }
-                if(height(node.left.left) - height(node.left.right)<0){
-                    node.left=leftrotate(node);
+                if (height(node.left.left) - height(node.left.right) < 0) {
+                    node.left = leftrotate(node.left);
                     return rightrotate(node);
 
 
-
-
-
-
-
+                }
             }
+            if(height(node.left)-height(node.right)>-1)
+                //right heavy
+                {
+                    if(height(node.right.left) - height(node.right.right)<0) {
+                        //leftleft
+                        return leftrotate(node);
+                    }
+                    if(height(node.right.left) - height(node.right.right)<0){
+                        node.right=rightrotate(node.right);
+                        return rightrotate(node);
 
-            }
+
+
+
+
+
+
+
+
+                    }
         }
         public boolean balacned(){
             return balanced(root);
