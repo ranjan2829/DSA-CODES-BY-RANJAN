@@ -54,8 +54,30 @@ class AVLTREES {
                 node.right=insert(val,node.right);
             }
             node.height=Math.max(height(node.left),height(node.right))+1;
-            return node;
+            return rotate(node);
 
+        }
+        private Node rotate(Node node){
+            if(height(node.left)-height(node.right)>1)
+            //left heavy
+            {
+                if(height(node.left.left) - height(node.left.right)>0) {
+                    //leftleft
+                    return rightrotate(node);
+                }
+                if(height(node.left.left) - height(node.left.right)<0){
+                    node.left=leftrotate(node);
+                    return rightrotate(node);
+
+
+
+
+
+
+
+            }
+
+            }
         }
         public boolean balacned(){
             return balanced(root);
