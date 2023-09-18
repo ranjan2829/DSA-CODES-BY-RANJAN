@@ -5,7 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/AVLTREES/AVLTREES.iml" filepath="$PROJECT_DIR$/AVLTREES/AVLTREES.iml" />
       <module fileurl="file://$PROJECT_DIR$/BInaryTrees/BInaryTrees.iml" filepath="$PROJECT_DIR$/BInaryTrees/BInaryTrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/BackTracking/BackTracking.iml" filepath="$PROJECT_DIR$/BackTracking/BackTracking.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/BinaryTreeAlgo/BinaryTreeAlgo.iml" filepath="$PROJECT_DIR$/BinaryTreeAlgo/BinaryTreeAlgo.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/BinaryTreesQuestions/BinaryTreesQuestions.iml" filepath="$PROJECT_DIR$/BinaryTreesQuestions/BinaryTreesQuestions.iml" />
+>>>>>>> refs/remotes/origin/main
       <module fileurl="file://$PROJECT_DIR$/Bubblesort/Bubblesort.iml" filepath="$PROJECT_DIR$/Bubblesort/Bubblesort.iml" />
       <module fileurl="file://$PROJECT_DIR$/CircularQueues/CircularQueues.iml" filepath="$PROJECT_DIR$/CircularQueues/CircularQueues.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA-CODES-BY-RANJAN-CPP.iml" filepath="$PROJECT_DIR$/DSA-CODES-BY-RANJAN-CPP.iml" />
