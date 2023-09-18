@@ -12,6 +12,30 @@ class Solution {
         if(root==null){
             return result;
         }
+        Queue<TreeNode> nodes=new LinkedList<>();
+        nodes.offer(root);
+        while(!nodes.isEmpty()){
+            int size = nodes.size();
+            TreeNode node= nodes.poll();
+            List<Integer> temp=new ArrayList<>(size);
+            for(int i=0;i<size;i++){
+                int sum+=node.val;
+                Double z=sum/size;
+                temp.add(z);
+
+            }
+            if(node.left!=null){
+                nodes.offer(node.left);
+            }
+            if(node.right!=null){
+                nodes.offer(node.right);
+            }
+            result.add(temp);
+
+        }
+        return result;
+
+
 
         
         
