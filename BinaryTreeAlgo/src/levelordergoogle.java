@@ -15,10 +15,20 @@ public class levelordergoogle {
         while(!result.isEmpty()){
             int size=result.size();
             TreeNode current=result.poll();
+            if(current.left!=null){
+                result.offer(current.left);
+            }
+            if(current.right!=null){
+                result.offer(current.right);
+            }
+            if(current.val==key){
+                break;
+            }
 
 
 
         }
+        return result.peek();
     }
 
 }
