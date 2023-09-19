@@ -8,6 +8,7 @@ public class zigzag {
     class Solution {
         public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
             List<List<Integer>> result=new ArrayList<>();
+            boolean reverse =false;
             if (root ==null){
                 return result;
             }
@@ -15,7 +16,16 @@ public class zigzag {
             nodes.offer(root);
             while(!nodes.isEmpty()){
                 int size= nodes.size();
-                for(int i=0i<size;i++){
+                for(int i=0;i<size;i++){
+                    if(!reverse){
+                        TreeNode node = nodes.poll();
+
+
+                    }
+                    else{
+
+                    }
+                    reverse=!reverse;
 
                 }
 
