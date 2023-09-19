@@ -1,8 +1,5 @@
 import javax.swing.tree.TreeNode;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class zigzag {
     class Solution {
@@ -12,17 +9,31 @@ public class zigzag {
             if (root ==null){
                 return result;
             }
-            Queue<TreeNode> nodes=new LinkedList<>();
+            Deque<TreeNode> nodes=new LinkedList<>();
             nodes.offer(root);
             while(!nodes.isEmpty()){
                 int size= nodes.size();
                 for(int i=0;i<size;i++){
                     if(!reverse){
-                        TreeNode node = nodes.poll();
+                        TreeNode node = nodes.pollFirst();
+                        if(node.left!=null){
+                            nodes.addLast(node.left);
+                        }
+                        if(node.right!=null){
+                            nodes.addLast(node.right);
+                        }
 
 
                     }
                     else{
+                        TreeNode node = nodes.pollLast();
+
+                        if(node.right!=null){
+                            nodes.addFirst(node.right);
+                        }
+                        if(node.left!=null){
+                            nodes.addFirst(node.left);
+                        }
 
                     }
                     reverse=!reverse;
