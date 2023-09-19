@@ -13,9 +13,12 @@ public class zigzag {
             nodes.offer(root);
             while(!nodes.isEmpty()){
                 int size= nodes.size();
+                List<Integer> ans=new ArrayList<>(size);
                 for(int i=0;i<size;i++){
                     if(!reverse){
                         TreeNode node = nodes.pollFirst();
+                        ans.add(node.val);
+
                         if(node.left!=null){
                             nodes.addLast(node.left);
                         }
@@ -27,6 +30,7 @@ public class zigzag {
                     }
                     else{
                         TreeNode node = nodes.pollLast();
+                        ans.add(node.val);
 
                         if(node.right!=null){
                             nodes.addFirst(node.right);
@@ -37,12 +41,14 @@ public class zigzag {
 
                     }
                     reverse=!reverse;
+                    result.add(ans);
 
                 }
+                return result;
 
             }
 
 
         }
     }
-}
+
