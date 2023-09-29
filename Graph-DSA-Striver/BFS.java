@@ -20,6 +20,7 @@ public class BFS {
             for(Integer it:adj.get(node)){
                 f(visited[it]==false){
                     visited[it]=true;
+                    q.add(it);
                 }
             }
 
