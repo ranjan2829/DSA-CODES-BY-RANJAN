@@ -14,8 +14,17 @@ public class BFS {
         q.add(0);
         visited[0]=true;
         while(!q.isEmpty()){
-            
+            Integer node=q.poll();
+            bfs.add(node);
+
+            for(Integer it:adj.get(node)){
+                f(visited[it]==false){
+                    visited[it]=true;
+                }
+            }
+
         }
+        return bfs;
     }
     
 
