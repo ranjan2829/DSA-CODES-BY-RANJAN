@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-
 class Solution {
-    public ststic void dfs(int node, boolean visited[], ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> ls){
-        visited[node]=true;
-        ls.add(node);
+    public static void dfs(int node,ArrayList<ArrayList<Integer>> adj,int visited[]){
+        visited[node]=1;
+        //ls.add(node);
         for(Integer it: adj.get(node)){
-            if(visited[it]==false){
-                dfs(it,visited,adj,ls);
+            if(visited[it]==0){
+                dfs(it,adj,visited);
             }
         }
     }
