@@ -11,6 +11,16 @@ class Solution {
         }
     }
     static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
-        // code here
+        ArrayList<ArrayList<Integer>> adjLs=new ArrayList<ArrayList<Integer>>();
+        for (int i=0;i<V;i++){
+            adjLs.add(new ArrayList<Integer>());
+
+        }
+        for(int i=0;i<V;i++){
+            for(int j=0;j<V;j++){
+                if(adj.get(i))
+            }
+        }
+
     }
 };
