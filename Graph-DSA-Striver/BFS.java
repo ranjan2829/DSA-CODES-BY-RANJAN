@@ -1,10 +1,4 @@
-package Graph
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
--DSA-Striver;
 
 public class BFS {
     public ArrayList<Integer> bfstraversal(int v ,ArrayList<ArrayList<Integer>> adj){
