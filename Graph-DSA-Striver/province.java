@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Solution {
     public static void dfs(int node,ArrayList<ArrayList<Integer>> adj,int visited[]){
         visited[node]=1;
