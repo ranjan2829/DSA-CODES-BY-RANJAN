@@ -19,14 +19,23 @@ class Solution {
         }
         int[] topo= new int[V];
         int i=0;
+        int count=0;
         while(!q.isEmpty()){
             int node=q.peek();
             q.remove();
+            count++;
             topo[i++]=node;
             for(int it:adj.get(node)){
                 indegree[it]--;
+                if(indegree[it]==0){
+                    q.add(it);
+                }
                 
             }
         }
+        if(count==V){
+            return false;
+        }
+        return true;
     }
 }
