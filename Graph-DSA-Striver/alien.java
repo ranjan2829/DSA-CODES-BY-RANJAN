@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 class Solution
@@ -23,7 +24,15 @@ class Solution
         while(!q.isEmpty()){
             int node=q.peek();
             q.remove();
-            
+            topo.add(node);
+            for(int it:adj.get(node)){
+                indegree[it]--;
+                if(indegree[it]==0){
+                    q.add(indegree[it]);
+                }
+                
+            }
+
         }
 
     }
