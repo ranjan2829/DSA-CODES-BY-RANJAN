@@ -82,6 +82,10 @@ class Solution {
 
 
         }
+        if(idx==numCourses){
+            return true;
+        }
+        return false;
 
         
     }
