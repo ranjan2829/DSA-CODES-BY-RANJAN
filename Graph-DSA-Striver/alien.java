@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Queue;
 
 class Solution
 
@@ -15,8 +16,14 @@ class Solution
         for(int i=0;i<V;i++){
             if(indegree[i]==0){
                 q.add(indegree[i]);
-                
+
             }
+        }
+        List<Integer> topo=new ArrayList<>();
+        while(!q.isEmpty()){
+            int node=q.peek();
+            q.remove();
+            
         }
 
     }
