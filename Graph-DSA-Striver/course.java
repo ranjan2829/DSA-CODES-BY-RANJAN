@@ -72,7 +72,15 @@ class Solution {
         while(!q.isEmpty()){
             int node=q.peek();
             q.remove();
-            
+            topo[idx++]=node;
+            for(int it:adj.get(node)){
+                indegree[it]--;
+                if(indegree[it]==0){
+                    q.add(indegree[it]);
+                }
+            }
+
+
         }
 
         
