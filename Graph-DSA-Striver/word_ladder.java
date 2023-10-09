@@ -1,41 +1,51 @@
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.Set;
 
-class pair{
+class Pair {
     String first;
     int second;
-    pair(String _first, int _second){
-        this.first=_first;
-        this.second=_second;
 
+    Pair(String _first, int _second) {
+        this.first = _first;
+        this.second = _second;
     }
 }
-class Solution
-{
-    public int wordLadderLength(String startWord, String targetWord, String[] wordList)
-    {
-        Queue<pair> q=new LinkedList<>();
-        q.add(new pair(startWord,1));
-        Set<String> st=new HashSet<string>();
-        int len=wprdList.length;
-        for(int i=0;i<len;i++){
+
+class Solution {
+    public int wordLadderLength(String startWord, String targetWord, String[] wordList) {
+        Queue<Pair> q = new LinkedList<>();
+        q.add(new Pair(startWord, 1));
+        Set<String> st = new HashSet<>();
+        int len = wordList.length;
+        for (int i = 0; i < len; i++) {
             st.add(wordList[i]);
         }
         st.remove(startWord);
-        while(!q.isEmpty()){
-            String word=q.peek().first;
-            int steps=q.peek().second;
+
+        while (!q.isEmpty()) {
+            String word = q.peek().first;
+            int steps = q.peek().second;
             q.remove();
-            if(word.equals(targetWord)==true){
+
+            if (word.equals(targetWord)) {
                 return steps;
             }
-            for(int i=0;i<word.length();i++){
-                for(char ch='a';ch<='z';ch++){
-                    
+
+            for (int i = 0; i < word.length(); i++) {
+                for (char ch = 'a'; ch <= 'z'; ch++) {
+                    char[] replaced = word.toCharArray();
+                    replaced[i] = ch;
+                    String repWord = new String(replaced);
+
+                    if (st.contains(repWord)) {
+                        st.remove(repWord);
+                        q.add(new Pair(repWord, steps + 1));
+                    }
                 }
             }
         }
-        
+        return 0;
     }
 }
